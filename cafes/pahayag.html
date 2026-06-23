@@ -1,30 +1,33 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pahayag Cafe — The Third Space</title>
   <meta name="description" content="Expression lives here. A profile of Pahayag Cafe in Lucena, Philippines." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
 
 <div class="page-transition-overlay"></div>
 
-<nav class="nav transparent">
+<nav class="nav transparent" aria-label="Main navigation">
   <span class="nav-wordmark">THE THIRD SPACE</span>
   <div class="nav-links">
-    <a href="../index.html" class="nav-link">Home</a>
+    <a href="../index.html" class="nav-link" data-page="index.html">Home</a>
     <span class="nav-sep">·</span>
-    <a href="../feature.html" class="nav-link">Feature</a>
+    <a href="../feature.html" class="nav-link" data-page="feature.html">Feature</a>
     <span class="nav-sep">·</span>
-    <a href="../cafes.html" class="nav-link">Hall of Cafes</a>
+    <a href="../cafes.html" class="nav-link" data-page="cafes.html">Hall of Cafes</a>
     <span class="nav-sep">·</span>
-    <a href="../behind-the-lens.html" class="nav-link">Behind the Lens</a>
+    <a href="../behind-the-lens.html" class="nav-link" data-page="behind-the-lens.html">Behind the Lens</a>
     <span class="nav-sep">·</span>
-    <a href="../about.html" class="nav-link">About</a>
+    <a href="../about.html" class="nav-link" data-page="about.html">About</a>
     <span class="nav-sep">·</span>
-    <a href="../credits.html" class="nav-link">Credits</a>
+    <a href="../credits.html" class="nav-link" data-page="credits.html">Credits</a>
   </div>
   <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
@@ -58,7 +61,7 @@
 
 <div class="cafe-article-row scroll-fade-up">
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/pahayag/p1.png" alt="Pahayag Cafe interior" />
+    <img src="../assets/images/cafes/pahayag/p1.png" alt="Pahayag Cafe interior" loading="lazy" />
   </div>
   <div class="cafe-article-row-text">
     <p class="drop-cap">The word "pahayag" in Filipino means declaration — a statement made outward, an expression given form and sent into the world. That a cafe would take this as its name is not incidental. It is a declaration of intent. Pahayag Cafe is a space built around the belief that people who are in the process of making something — a poem, a thesis, a painting, a plan, a life — deserve a room that takes that process seriously. Its name announces what it stands for before you even walk through the door.</p>
@@ -70,7 +73,7 @@
     <p>Inside, the space reflects its philosophy. Pahayag Cafe does not look like a generic coffee shop. It looks like somewhere that was thought about — where the placement of every chair, every shelf, every lamp was considered not for the sake of aesthetics alone but for the sake of what happens when a person sits down inside it. The result is an environment that invites creative work without demanding it: you can come here to write and find yourself writing; you can come here to think and find the thinking coming easier.</p>
   </div>
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/pahayag/p2.png" alt="Pahayag Cafe detail" />
+    <img src="../assets/images/cafes/pahayag/p2.png" alt="Pahayag Cafe detail" loading="lazy" />
   </div>
 </div>
 
@@ -80,7 +83,7 @@
 
 <div class="cafe-article-row scroll-fade-up">
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/pahayag/p3.png" alt="Pahayag Cafe creative space" />
+    <img src="../assets/images/cafes/pahayag/p3.png" alt="Pahayag Cafe creative space" loading="lazy" />
   </div>
   <div class="cafe-article-row-text">
     <p>Artists, writers, and students working on passion projects find in Pahayag a particular kind of permission. There is something about a space that takes self-expression seriously that makes the people inside it feel less self-conscious about their own. You do not apologize for the stack of reference materials spread across the table. The cafe, by the ethos it carries in its name, has already told you that what you're doing is worthwhile. That implicit affirmation — rare in any space — is what makes Pahayag more than a coffee shop.</p>
@@ -92,7 +95,7 @@
     <p>The drinks and food at Pahayag are in keeping with this spirit: surprising and personal, the kind of menu that reflects the taste and curiosity of whoever put it together. Drinks that go somewhere interesting, food that rewards you for paying attention. The experience of ordering here is part of the experience of the cafe itself — a small act of discovery, a pahayag in miniature. You did not know you would have this; now you have had it, and it has changed your afternoon.</p>
   </div>
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/pahayag/p4.png" alt="Pahayag Cafe drinks and menu" />
+    <img src="../assets/images/cafes/pahayag/p4.png" alt="Pahayag Cafe drinks and menu" loading="lazy" />
   </div>
 </div>
 
@@ -121,7 +124,7 @@
   <div class="coffee-ring-divider">
     <div class="coffee-ring"></div><div class="coffee-ring"></div><div class="coffee-ring"></div><div class="coffee-ring"></div><div class="coffee-ring"></div>
   </div>
-  <nav class="footer-nav">
+  <nav class="footer-nav" aria-label="Footer navigation">
     <a href="../feature.html">Feature</a>
     <span class="nav-sep" style="color:rgba(201,185,154,0.3)">·</span>
     <a href="../cafes.html">Hall of Cafes</a>
@@ -134,8 +137,8 @@
   </nav>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
 </body>
 </html>

@@ -1,30 +1,33 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ballpoint — The Third Space</title>
   <meta name="description" content="Where the game never really ends. A look at Ballpoint, the billiards and coffee venue in Lucena, Philippines." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
 
 <div class="page-transition-overlay"></div>
 
-<nav class="nav transparent">
+<nav class="nav transparent" aria-label="Main navigation">
   <span class="nav-wordmark">THE THIRD SPACE</span>
   <div class="nav-links">
-    <a href="../index.html" class="nav-link">Home</a>
+    <a href="../index.html" class="nav-link" data-page="index.html">Home</a>
     <span class="nav-sep">·</span>
-    <a href="../feature.html" class="nav-link">Feature</a>
+    <a href="../feature.html" class="nav-link" data-page="feature.html">Feature</a>
     <span class="nav-sep">·</span>
-    <a href="../cafes.html" class="nav-link">Hall of Cafes</a>
+    <a href="../cafes.html" class="nav-link" data-page="cafes.html">Hall of Cafes</a>
     <span class="nav-sep">·</span>
-    <a href="../behind-the-lens.html" class="nav-link">Behind the Lens</a>
+    <a href="../behind-the-lens.html" class="nav-link" data-page="behind-the-lens.html">Behind the Lens</a>
     <span class="nav-sep">·</span>
-    <a href="../about.html" class="nav-link">About</a>
+    <a href="../about.html" class="nav-link" data-page="about.html">About</a>
     <span class="nav-sep">·</span>
-    <a href="../credits.html" class="nav-link">Credits</a>
+    <a href="../credits.html" class="nav-link" data-page="credits.html">Credits</a>
   </div>
   <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
@@ -53,7 +56,7 @@
 
 <div class="cafe-article-row scroll-fade-up">
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/ballpoint/1.png" alt="Ballpoint pool tables" />
+    <img src="../assets/images/cafes/ballpoint/1.png" alt="Ballpoint pool tables" loading="lazy" />
   </div>
   <div class="cafe-article-row-text">
     <p class="drop-cap">There is a particular kind of energy that only exists in places where two worlds share the same air — where the crack of billiard balls mixes with the smell of coffee, and nobody thinks that's strange. Ballpoint is that place. A billiards venue that serves coffee, or a cafe with pool tables, depending on how you walk through the door. Either way, you arrive somewhere that refuses to be only one thing, and the refusal is exactly the point.</p>
@@ -67,7 +70,7 @@
     <span class="cafe-row-num" aria-hidden="true">02</span>
   </div>
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/ballpoint/2.png" alt="Ballpoint atmosphere" />
+    <img src="../assets/images/cafes/ballpoint/2.png" alt="Ballpoint atmosphere" loading="lazy" />
   </div>
 </div>
 
@@ -77,7 +80,7 @@
 
 <div class="cafe-article-row scroll-fade-up">
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/ballpoint/3.png" alt="Ballpoint drinks" />
+    <img src="../assets/images/cafes/ballpoint/3.png" alt="Ballpoint drinks" loading="lazy" />
   </div>
   <div class="cafe-article-row-text">
     <p>The drinks at Ballpoint hold their own without apology. Coffee is well-made and quietly good — not precious, not performative, just the right thing to have in hand while you watch someone line up a shot you already know they're going to miss. The food is the kind you order without thinking about it and finish without noticing, because the real point of being here is not the food. The real point is the table, the cue, and whoever decided to show up with you tonight.</p>
@@ -91,7 +94,7 @@
     <span class="cafe-row-num" aria-hidden="true">04</span>
   </div>
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/ballpoint/4.png" alt="Ballpoint cafe seating" />
+    <img src="../assets/images/cafes/ballpoint/4.png" alt="Ballpoint cafe seating" loading="lazy" />
   </div>
 </div>
 
@@ -124,7 +127,7 @@
   <div class="coffee-ring-divider">
     <div class="coffee-ring"></div><div class="coffee-ring"></div><div class="coffee-ring"></div><div class="coffee-ring"></div><div class="coffee-ring"></div>
   </div>
-  <nav class="footer-nav">
+  <nav class="footer-nav" aria-label="Footer navigation">
     <a href="../feature.html">Feature</a>
     <span class="nav-sep" style="color:rgba(201,185,154,0.3)">·</span>
     <a href="../cafes.html">Hall of Cafes</a>
@@ -137,8 +140,8 @@
   </nav>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
 </body>
 </html>

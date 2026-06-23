@@ -1,17 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Third Space — A Web Magazine on Cafe Hopping in Lucena</title>
   <meta name="description" content="An editorial web magazine exploring the cafe hopping subculture and third place culture in Lucena, Philippines." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
 <div class="page-transition-overlay"></div>
 
-<nav class="nav transparent">
+<nav class="nav transparent" aria-label="Main navigation">
   <span class="nav-wordmark">THE THIRD SPACE</span>
   <div class="nav-links">
     <a href="index.html" class="nav-link" data-page="index.html">Home</a>
@@ -40,6 +43,7 @@
   <a href="credits.html" class="nav-link">Credits</a>
 </div>
 
+<main>
 <section class="hero">
   
   <div class="hero-carousel" aria-hidden="true">
@@ -127,7 +131,7 @@
           <p>This issue of The Third Space is our love letter to those rooms. To the third places that hold us when home feels too quiet and school feels too loud. We hope you find something of yourself in these pages — and maybe a new favorite corner of the city.</p>
         </div>
         <div class="editors-note-signature">
-          <img src="assets/images/members/lalaine_delacruz.jpg" alt="Lalaine Jannah dela Cruz" class="eic-photo" />
+          <img src="assets/images/members/lalaine_delacruz.jpg" alt="Lalaine Jannah dela Cruz" class="eic-photo" loading="lazy" />
           <span>— Lalaine Jannah dela Cruz, Editor-in-Chief</span>
         </div>
       </div>
@@ -165,7 +169,7 @@
 
 <a href="cafes/ballpoint.html" class="cafe-card">
         <div class="cafe-card-image-wrap">
-          <img src="assets/images/cafes/ballpoint/1.png" alt="Ballpoint Cafe" />
+          <img src="assets/images/cafes/ballpoint/1.png" alt="Ballpoint Cafe" loading="lazy" />
           <div class="cafe-card-overlay">
             <span class="cafe-card-overlay-name">Ballpoint</span>
             <span class="cafe-card-overlay-cta">Read Article →</span>
@@ -179,7 +183,7 @@
 
 <a href="cafes/butters-and-coffee.html" class="cafe-card">
         <div class="cafe-card-image-wrap">
-          <img src="assets/images/cafes/butters-and-coffee/1.png" alt="Butters and Coffee" />
+          <img src="assets/images/cafes/butters-and-coffee/1.png" alt="Butters and Coffee" loading="lazy" />
           <div class="cafe-card-overlay">
             <span class="cafe-card-overlay-name">Butters and Coffee</span>
             <span class="cafe-card-overlay-cta">Read Article →</span>
@@ -193,7 +197,7 @@
 
 <a href="cafes/cafeiona.html" class="cafe-card">
         <div class="cafe-card-image-wrap">
-          <img src="assets/images/cafes/cafeiona/1.png" alt="Cafeiona" />
+          <img src="assets/images/cafes/cafeiona/1.png" alt="Cafeiona" loading="lazy" />
           <div class="cafe-card-overlay">
             <span class="cafe-card-overlay-name">Cafeiona</span>
             <span class="cafe-card-overlay-cta">Read Article →</span>
@@ -230,9 +234,10 @@
   </div>
   <div class="btl-teaser-right">
     
-    <img src="assets/images/cafes/kuya-bean/3.png" alt="Behind the lens" style="width:100%;height:100%;object-fit:cover;" />
+    <img src="assets/images/cafes/kuya-bean/3.png" alt="Behind the lens" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
   </div>
 </section>
+</main>
 
 <footer class="footer">
   <p class="footer-wordmark">THE THIRD SPACE</p>
@@ -244,7 +249,7 @@
     <div class="coffee-ring"></div>
     <div class="coffee-ring"></div>
   </div>
-  <nav class="footer-nav">
+  <nav class="footer-nav" aria-label="Footer navigation">
     <a href="feature.html">Feature</a>
     <span class="nav-sep" style="color:rgba(201,185,154,0.3)">·</span>
     <a href="cafes.html">Hall of Cafes</a>
@@ -257,8 +262,8 @@
   </nav>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

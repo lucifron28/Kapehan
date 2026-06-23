@@ -1,30 +1,33 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Little Madi — The Third Space</title>
   <meta name="description" content="Small space, big feelings. A profile of Little Madi Tea House in Lucena, Philippines." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
 
 <div class="page-transition-overlay"></div>
 
-<nav class="nav transparent">
+<nav class="nav transparent" aria-label="Main navigation">
   <span class="nav-wordmark">THE THIRD SPACE</span>
   <div class="nav-links">
-    <a href="../index.html" class="nav-link">Home</a>
+    <a href="../index.html" class="nav-link" data-page="index.html">Home</a>
     <span class="nav-sep">·</span>
-    <a href="../feature.html" class="nav-link">Feature</a>
+    <a href="../feature.html" class="nav-link" data-page="feature.html">Feature</a>
     <span class="nav-sep">·</span>
-    <a href="../cafes.html" class="nav-link">Hall of Cafes</a>
+    <a href="../cafes.html" class="nav-link" data-page="cafes.html">Hall of Cafes</a>
     <span class="nav-sep">·</span>
-    <a href="../behind-the-lens.html" class="nav-link">Behind the Lens</a>
+    <a href="../behind-the-lens.html" class="nav-link" data-page="behind-the-lens.html">Behind the Lens</a>
     <span class="nav-sep">·</span>
-    <a href="../about.html" class="nav-link">About</a>
+    <a href="../about.html" class="nav-link" data-page="about.html">About</a>
     <span class="nav-sep">·</span>
-    <a href="../credits.html" class="nav-link">Credits</a>
+    <a href="../credits.html" class="nav-link" data-page="credits.html">Credits</a>
   </div>
   <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
@@ -53,7 +56,7 @@
 
 <div class="cafe-article-row scroll-fade-up">
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/little-madi/1.png" alt="Little Madi interior" />
+    <img src="../assets/images/cafes/little-madi/1.png" alt="Little Madi interior" loading="lazy" />
   </div>
   <div class="cafe-article-row-text">
     <p class="drop-cap">As students, we visited Little Madi Tea House not to review a menu or document an aesthetic, but to find a place to breathe. We were looking for what the cafe hopping subculture often promises and only sometimes delivers: a genuine pause. A place to sit down, take a short break, and unwind without needing to explain yourself or perform being at ease. What we found was exactly that — a small space with the particular quality of feeling like it was made specifically for you, even though it is made for everyone who needs it.</p>
@@ -69,13 +72,13 @@
     <p>Little Madi Tea House proves something that larger cafes sometimes struggle to demonstrate: that intimacy is a feature, not a limitation. Its few tables mean that the experience of being here is not spread thin across a room of strangers. There is a closeness to it, a sense that the people around you are also, in some way, letting their guard down. Conversations at Little Madi tend toward the honest. The space doesn't invite performance. It invites presence.</p>
   </div>
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/little-madi/2.png" alt="Little Madi drinks" />
+    <img src="../assets/images/cafes/little-madi/2.png" alt="Little Madi drinks" loading="lazy" />
   </div>
 </div>
 
 <div class="cafe-article-row scroll-fade-up">
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/little-madi/3.png" alt="Little Madi detail" />
+    <img src="../assets/images/cafes/little-madi/3.png" alt="Little Madi detail" loading="lazy" />
   </div>
   <div class="cafe-article-row-text">
     <p>The decor is carefully chosen without being precious. Every element seems to have been placed with thought — not to impress visitors but to welcome them. The menu surprises in the best way: teas and drinks that go further than you expected, in combinations that feel considered. You order something you've never had before and it becomes the best part of your afternoon. That quality of gentle surprise — of something personal in what is offered — is part of what draws people back.</p>
@@ -87,7 +90,7 @@
     <p>Our visit showed us how a simple cafe can become meaningful for students. Being at Little Madi helped us understand why our peers are drawn to places like this — not only for what they serve, but for the comfort and atmosphere they provide. It became more than just a stop during the day. It became a space where you could pause, recharge, and find a sense of ease before returning to responsibilities.</p>
   </div>
   <div class="cafe-article-row-photo">
-    <img src="../assets/images/cafes/little-madi/4.png" alt="Little Madi ambiance" />
+    <img src="../assets/images/cafes/little-madi/4.png" alt="Little Madi ambiance" loading="lazy" />
   </div>
 </div>
 
@@ -116,7 +119,7 @@
   <div class="coffee-ring-divider">
     <div class="coffee-ring"></div><div class="coffee-ring"></div><div class="coffee-ring"></div><div class="coffee-ring"></div><div class="coffee-ring"></div>
   </div>
-  <nav class="footer-nav">
+  <nav class="footer-nav" aria-label="Footer navigation">
     <a href="../feature.html">Feature</a>
     <span class="nav-sep" style="color:rgba(201,185,154,0.3)">·</span>
     <a href="../cafes.html">Hall of Cafes</a>
@@ -129,8 +132,8 @@
   </nav>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
 </body>
 </html>
