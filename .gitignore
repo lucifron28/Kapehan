@@ -1,3 +1,13 @@
 .claude/
 .agents/
 skills-lock.json
+
+# Source/duplicate folders (originals live in assets/images/)
+Ballpoint/
+Butter and Coffee/
+Cafeiona/
+Don Macchiato/
+Kuya Bean Kapehan/
+Little Madi/
+Pahayag/
+members/
