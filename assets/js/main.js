@@ -34,6 +34,7 @@ function initNav() {
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('open');
       mobileMenu.classList.toggle('open');
+      nav.classList.toggle('menu-open');
       document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
     });
 
@@ -41,6 +42,7 @@ function initNav() {
       link.addEventListener('click', () => {
         hamburger.classList.remove('open');
         mobileMenu.classList.remove('open');
+        nav.classList.remove('menu-open');
         document.body.style.overflow = '';
       });
     });

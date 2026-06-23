@@ -211,29 +211,71 @@ p:last-child { margin-bottom: 0; }
 .nav-hamburger.open span:nth-child(2) { opacity: 0; }
 .nav-hamburger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
 
+.nav.menu-open {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.nav.menu-open .nav-wordmark {
+  color: var(--color-white) !important;
+}
+
+.nav.menu-open .nav-hamburger span {
+  background: var(--color-white) !important;
+}
+
 .nav-mobile-menu {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--color-espresso);
+  background: rgba(59, 35, 20, 0.85); /* Frosty dark espresso */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   z-index: 999;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 2rem;
   padding-top: 5rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
-.nav-mobile-menu.open { display: flex; }
+.nav-mobile-menu.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 
 .nav-mobile-menu .nav-link {
-  font-size: 1.5rem;
-  letter-spacing: 0.2em;
+  font-family: var(--font-literary);
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-style: italic;
+  letter-spacing: 0.05em;
   color: var(--color-cream);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.4s ease, opacity 0.4s ease, color var(--transition-base);
 }
+
+.nav-mobile-menu.open .nav-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger the links */
+.nav-mobile-menu.open .nav-link:nth-child(1) { transition-delay: 0.1s; }
+.nav-mobile-menu.open .nav-link:nth-child(2) { transition-delay: 0.15s; }
+.nav-mobile-menu.open .nav-link:nth-child(3) { transition-delay: 0.2s; }
+.nav-mobile-menu.open .nav-link:nth-child(4) { transition-delay: 0.25s; }
+.nav-mobile-menu.open .nav-link:nth-child(5) { transition-delay: 0.3s; }
+.nav-mobile-menu.open .nav-link:nth-child(6) { transition-delay: 0.35s; }
 
 .nav-mobile-menu .nav-link::after { background: var(--color-rust); }
 
