@@ -157,17 +157,6 @@ function initGsap() {
     );
   });
 
-  /* Article paragraphs fade in */
-  document.querySelectorAll('.article-body p, .article-body h2, .article-pull-quote').forEach(el => {
-    gsap.fromTo(el,
-      { opacity: 0, y: 15 },
-      {
-        opacity: 1, y: 0, duration: 0.65, ease: 'power2.out',
-        scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
-      }
-    );
-  });
-
   /* Team member cards */
   document.querySelectorAll('.team-member').forEach((member, i) => {
     gsap.fromTo(member,
